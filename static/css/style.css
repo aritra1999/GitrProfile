@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #F3F4F6;
+    --font-color: #1F2937;
+    --font-second-color: #1F293799;
+    --bg-color: #fff;
+    --ishtyle-color: #6D28D9;
+    --link-color: #3B82F6;
+}
+
+[data-theme="dark"] {
+    --primary-color: #1d1d1d;
+    --font-color: #F9FAFB;
+    --font-second-color: #F9FAFB96;
+    --bg-color: #171616;
+    --ishtyle-color: #6D28D9;
+    --link-color:#818CF8;
+}
+
+.theme-switch-wrapper {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.theme-switch-wrapper em {
+	margin-left: 10px;
+	font-size: 1rem;
+}
+
+.theme-switch {
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	width: 60px;
+}
+
+.theme-switch input {
+	display: none;
+}
+
+.slider {
+	background-color: #ccc;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+}
+
+.slider:before {
+	background-color: #fff;
+	bottom: 4px;
+	content: "";
+	height: 26px;
+	left: 4px;
+	position: absolute;
+	transition: .4s;
+	width: 26px;
+}
+
+.theme-icon {
+    color: var(--font-color);
+}
+
+input:checked + .slider {
+	background-color: var(--ishtyle-color);
+}
+
+input:checked + .slider:before {
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1rem;
+}
+
+section{
+    margin: 50px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.search-section {
+    display: grid;
+    padding: 50px 0;
+    justify-content: center;
+    align-content: center;
+}
+
+.search-form {
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.search {
+    font-size: 1rem;
+    padding: 4px 20px;
+    color: var(--font-color);
+    border: none;
+    background-color: transparent;
+}
+
+.search-icon {
+    height: 1.25rem;
+    margin: auto 20px;
+    color: #767578;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}

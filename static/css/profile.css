@@ -1,0 +1,54 @@
+.user-details{
+    background-color: var(--primary-color);
+    margin: 10px;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    vertical-align: center;
+
+}
+.user-profile-picture{
+    display: block;
+    height: 150px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.user-info{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.profile-details{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%
+}
+
+.profile-details-card {
+    background-color: var(--primary-color);
+    margin: 10px;
+    height: 130px;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.profile-details-card-icon{
+    height: 2.5rem;
+    margin: auto;
+}
+
+.profile-details-card-details{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.subheading{
+    color: var(--font-second-color);
+}
